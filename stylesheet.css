@@ -1,0 +1,19 @@
+#navbar {
+	background-color: #FFB03B;
+}
+.icon-bar > * i { /* Changes the top bar icon colors*/	
+	color : #FFF0A5;
+}
+
+.icon-bar {
+
+}
+
+.icon-bar > a:hover { /* Changes the top bar background hover colors*/	
+	background: #468976;
+}
+
+img {
+	height: 500px;
+	width : 1400px;
+}
