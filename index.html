@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>CityMenu</title>
+	<link rel = "shortcut icon" href = "logo.ico">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<link type = "text/css" rel = "stylesheet" href= "css/foundation.css" />
 	<link type = "text/css" rel = "stylesheet" href= "foundation-icons.css"/>
@@ -26,7 +27,7 @@
 			if(flag) {
 				raster.scale(0.99);		
 			} else {
-				raster.scale(1.01);		
+				raster.scale(1/0.99);		
 			}
 			counter++;		
 		}
@@ -77,25 +78,43 @@
 					Everything at your fingertips
 				</div>
 			</li>
+			<li>
+				<img src = "rest1.jpg" class = "photo"/>
+				<div class = "orbit-caption">
+					Find nice restaurants...
+				</div>
+			</li>
+			<li>
+				<img src = "rest2.jpg" class = "photo"/>
+				<div class = "orbit-caption">
+					... Anywhere in the city
+				</div>
+			</li>
 		</ul>
 	</div>
 	<div class = "row" id = "text">
-		<div class = "large-4 small-12 columns">
+		<div class = "large-3 small-12 columns panel">
 			<h4>Problem</h4>
 			<p>Nowadays, people who live in the city do not have time to think what do
 			they want to eat, so they end either eating nothing or eathing anything, regardless if
-			it is healthy or not. This could lead to severe illnesses or problems in the future</p>
+			it is healthy or not. This could lead to severe illnesses or problems in the future. and thus, affect
+			 the economy of the sector the work in.</p>
 		</div>
-		<div class = "large-4 small-12 columns">
+		<div class = "large-3 small-12 columns">
 			<h4>Audience</h4>
 			<p>The audience is people from 15 to 30 years old who live in the Metropoitan Zone of Guadalajara
 			 who want to have a fast and healthy meal at a right price.</p>
 		</div>
-		<div class = "large-4 small-12 columns">
+		<div class = "large-3 small-12 columns">
 			<h4>Solution</h4>
 			<p>CityMenu is an app which gives recommendations based on user reviews and a analysis of the 
 			most popular restaurants in the city. With an intuitive design, the user is able to easily find what 
 			to eat in a short period of time.</p>
+		</div>
+		<div class = "large-3 small-12 columns panel">
+			<h4>Impact</h4>
+			<p>In general, this will help to increase productivity and money movement inside the MZG. As people
+			 who work will have an overall better nutrition, their efficency at work increases as well. Also, there is a benefit economically to the food sector as it will have more clients.</p>
 		</div>
 	</div>
 
@@ -150,12 +169,17 @@
 		</div>
 	</div>
 	<a name = "gallery"></a>
-	<div class = "canvas1">
+	<div class = "canvas2">
 		<div id = "video">
 			<iframe width="720" height="480" src="https://www.youtube.com/embed/Y-TmMSw9Mbg" frameborder="0" allowfullscreen></iframe>
 		</div>
 		<div class = "picture" id = "p1">
 			
+		</div>
+	</div>
+	<div class "row">
+		<div class = "large-12 columns">
+			<h5>Sponsored by Daniel Alejandro Jimenez</h5>
 		</div>
 	</div>
 	<a name = "contactus"></a>
