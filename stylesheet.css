@@ -1,8 +1,28 @@
+.spacer {
+	margin-top: 50px;
+}
+
+.spacerbottom {
+	margin-bottom:50px;
+}
+
 #navbar {
 	background-color: #FFB03B;
 	padding: 0px;
 	margin-bottom: -7px;
 }
+
+.buttoncolors {
+	background: #468966;
+}
+
+.fullWidth {
+   width: 90%;
+   margin-left: 50px;
+   margin-right: 50px;
+   max-width: initial;
+}
+
 .icon-bar > * i { /* Changes the top bar icon colors*/	
 	color : #FFF0A5;
 }
@@ -105,9 +125,9 @@ p {
 }
 
 .mockup {
-	position: relative;
 	height: 200px;
 	width : 250px;
+	margin-bottom:75px;
 }
 
 .numbers {
@@ -160,14 +180,12 @@ p {
 }
 
 #video {
-	position: relative;
 	top: 50px;
 	left: 50px;
 }
 
 .picture {
-	position: relative;
-	width: 500px;
+	width: 620px;
 	height: 480px;
 }
 

@@ -2,8 +2,7 @@
 <html>
 <head>
 	<title>CityMenu</title>
-	<link rel = "shortcut icon" href = "logo.ico">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script type="text/javascript" src="jquery-1.11.2.min.js"></script>
 	<link type = "text/css" rel = "stylesheet" href= "css/foundation.css" />
 	<link type = "text/css" rel = "stylesheet" href= "foundation-icons.css"/>
 	<link href="dist/css/pizza.css" media="screen, projector, print" rel="stylesheet" type="text/css" />
@@ -12,6 +11,7 @@
 	<link rel="stylesheet" type="text/css" href="stylesheet.css">
 	<script type="text/javascript" src="paper-full.min.js"></script>
 	<script type="text/javascript" src="http://www.skypeassets.com/i/scom/js/skype-uri.js"></script>
+	<script type="text/javascript" src="ourscript.js"></script>
 	<script type="text/paperscript" canvas="myCanvas">
 		var counter = 0;
 		var flag = true;
@@ -44,18 +44,22 @@
 	</script>
 </head>
 <body style = "background-color : #FFF0A5">
-	<div data-magellan-expedition="fixed">
+	<div data-magellan-expedition="fixed" class="fixed">
 		<dl class="sub-nav">
-			<dd data-magellan-arrival="build"><a href="#top" class = "toplink">CityMenu</a></dd>
+			<dd data-magellan-arrival="build"><a href="#top" class = "toplink">Top</a></dd>
 			<dd data-magellan-arrival="js"><a href="#features" class = "toplink">Features</a></dd>
 			<dd data-magellan-arrival="js"><a href="#gallery" class = "toplink">Gallery</a></dd>
 			<dd data-magellan-arrival="js"><a href="#contactus" class = "toplink">Contact Us</a></dd>
+			<dd data-magellan-arrival="js" id="index2"><a href="#" class="toplink">Login</a></dd>
+			<dd data-magellan-arrival="js" class="signup"><a href="#" class="toplink">Sign Up</a></dd>
+			<dd data-magellan-arrival="js" id="getstarted"><a href="#" class="toplink">I'm Hungry!</a></dd>
 		</dl>
 	</div>
 	<div id = "canvas">
 		<canvas id="myCanvas" height="142" width="142"></canvas>
 	</div>
-	<div id = "test">
+	<div class="row">
+		<div class="small-12 large-10 large-offset-1 columns"
 		<a name = "top"></a>
 		<ul class="example-orbit" data-orbit>
 			<li>
@@ -102,98 +106,80 @@
 			</li>
 		</ul>
 	</div>
+</div>
 	<div class = "row" id = "text">
 		<div class = "large-3 small-12 columns panel">
 			<h4>Problem</h4>
-			<p>Nowadays, people who live in the city do not have time to think what do
-			they want to eat, so they end either eating nothing or eathing anything, regardless if
-			it is healthy or not. This could lead to severe illnesses or problems in the future. and thus, affect
-			 the economy of the sector the work in.</p>
+			<p>Nowadays, people who have a busy city life have little time to think concerning what to eat. Many times they end up eating anything, or frequenting the same places over and over, due to lack of other options.</p>
 		</div>
 		<div class = "large-3 small-12 columns">
 			<h4>Audience</h4>
-			<p>The audience is people from 15 to 30 years old who live in the Metropoitan Zone of Guadalajara
-			 who want to have a fast and healthy meal at a right price.</p>
+			<p>Our audience consists mainly of young adults from 18-30 years of age, who want to quickly decide on a recommended place, where they are guaranteed service, quality, taste, and/or budget, depending on their particular needs.</p>
 		</div>
 		<div class = "large-3 small-12 columns">
 			<h4>Solution</h4>
 			<p>CityMenu is an app which gives recommendations based on user reviews and a analysis of the 
-			most popular restaurants in the city. With an intuitive design, the user is able to easily find what 
-			to eat in a short period of time.</p>
+			most popular restaurants in the city. With an intuitive design, the user is able to easily find what and where to eat in a short period of time.</p>
 		</div>
 		<div class = "large-3 small-12 columns panel">
 			<h4>Impact</h4>
-			<p>In general, this will help to increase productivity and money movement inside the MZG. As people
-			 who work will have an overall better nutrition, their efficency at work increases as well. Also, there is a benefit economically to the food sector as it will have more clients.</p>
+			<p>We expect our clients will be satisfied with our application, making it their default go-to app when uncertain about food acommodations. The quick decision time will help users spend less time choosing where to eat, and more time to do whatever else they need or want to do.</p>
 		</div>
 	</div>
 
 	<a name = "features"></a>
-	<div class = "canvas1">
-		<div class = "mockup" id = "mockup1">
+	<div class = "row" style="margin-bottom:50px">
+		<div class = "mockup small-8 small-offset-2 large-4 large-offset-1 columns end">
 			<img src = "mockups/mockup1.png" />
 			<div class = "mockupText">
-				The app provides geolocalization services, so you can find the food service you want 
-				in no time at all!
+				The app provides geolocalization services, so you can find the food service you want in no time at all!
 			</div>
 		</div>
-		<div class = "mockup" id = "mockup2">
+		<div class = "mockup small-8 small-offset-2 large-4 columns end">
 			<img src = "mockups/mockup3.png" />
 			<div class = "mockupText">
-				Our search engine enables you to find the best option based on 
-				distance, ratings, times, and other filters, making your decision easy 
-				and enjoyable.
+				Our search engine enables you to find the best option based on distance, ratings, times, and other filters, making your decision easy and enjoyable.
 			</div>
 		</div>
-		<div class = "mockup" id = "mockup3">
+		<div class = "mockup small-8 small-offset-2 large-4 large-offset-1 columns end">
 			<img src = "mockups/mockup2.png" />
 			<div class = "mockupText">
-				If you do not know what to search for, don't worry! The app can provide 
-				suggestions with basis on your location and user ratings, so when you 
-				don't have any idea of what to eat, we can provide it for you.
+				If you do not know what to search for, don't worry! The app can provide	suggestions based on your location and user ratings, so when you don't have any idea of what to eat, we can give you one!
 			</div>
 		</div>
-		<div class = "mockup" id = "mockup4">
+		<div class = "mockup small-8 small-offset-2 large-4 columns end">
 			<img src = "mockups/mockup4.png" />
 			<div class = "mockupText">
-				In some cases, restaurants accept reservations. So if that is the case, you can 
-				reserve right from the app. If that is not the case, a phone call is at a tap of distance.
+				In some cases, restaurants accept reservations. So if that is the case, you can reserve right from the app. If that is not the case, a phone call is easy to make.
 			</div>
 		</div>
-		<div class = "mockup" id = "mockup5">
+		<div class = "mockup small-8 small-offset-2 large-4 large-offset-1 columns end">
 			<img src = "mockups/mockup5.png" />
-			<div class = "mockupText" style = "font-size : 14px">
-				So now you know what to eat. But you need to get there. Luckily, CityMenu takes you there in 
-				no time. Just start the navigation service and follow the instructions to arrive to the restaurant. If
-				you wish, you can set a phone call to the restaurant once you are close if you plan to take your meal with
-				you. The decision is yours.
+			<div class = "mockupText">
+				So now you know what to eat, but you need to get there. Luckily, CityMenu takes you there in 
+				no time. Just start the navigation service and follow the instructions to arrive at the restaurant.
 			</div>
 		</div>
-		<div class = "mockup" id = "mockup6">
+		<div class = "mockup small-8 small-offset-2 large-4 columns end">
 			<img src = "mockups/mockup6.png" />
 			<div class = "mockupText">
-				Last but not least, when you finish your meal you will get a notification reminding you to rate your
-				experience at the restaurant. That way the community grows bigger and bigger. Maybe you can help
-				somebody with your review, who knows?
+				Last but not least, when you finish your meal you will get a notification reminding you to rate your experience at the restaurant. That way the community grows bigger and bigger!
 			</div>
 		</div>
 	</div>
+
 	<a name = "gallery"></a>
-	<div class = "canvas2">
-		<div id = "video">
-			<iframe width="720" height="480" src="https://www.youtube.com/embed/Y-TmMSw9Mbg" frameborder="0" allowfullscreen></iframe>
+	<div class = "row fullWidth" style="margin-bottom:25px">
+		<div class="small-12 large-6 columns">
+			<iframe width="620" height="480" src="https://www.youtube.com/embed/Y-TmMSw9Mbg" frameborder="0" allowfullscreen></iframe>
 		</div>
-		<div class = "picture" id = "p1">
-			<img src = "team.jpg">
-		</div>
-	</div>
-	<div class "row">
-		<div class = "large-12 columns">
-			<h5>Sponsored by Daniel Alejandro Jimenez</h5>
+		<div class = "small-12 large-6 columns">
+			<img class="picture" src = "team.jpg">
 		</div>
 	</div>
+
 	<a name = "contactus"></a>
-	<div class = "row">
+	<div class = "row spacerbottom">
 		<div class = "large-4 large-offset-4 small-6 small-offset-3 columns">
 			<div id = "socialbar">
 				<div id = "facebook" class = "social"><a href = "https://www.facebook.com/CityMenuGdl"><i class = "fi-social-facebook"></i></a></div>
@@ -213,6 +199,12 @@
 			</div>
 		</div>
 	</div>
+<div class "row">
+	<div class = "small-12 large-12 columns">
+		<h5>Sponsored by Daniel Alejandro Jimenez</h5>
+	</div>
+</div>
+
 	<script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>
     <script type="text/javascript" src = "MainScript.js"></script>
