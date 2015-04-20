@@ -6,9 +6,6 @@ function when_click1() {
 	location.replace("index.html");
 }
 
-function when_clicklogin() {
-	alert("We're working on this!");
-}
 
 function when_clicksignup() {
 	location.replace("index3.html");
@@ -22,9 +19,7 @@ function setup() {
 	var click2 = $("#index2");
 	$(click2).click(when_click2);
 	var click1 = $(".taketoindex");
-	$(click1).click(when_click1);
-	var loginb = $("#login");
-	$(loginb).click(when_clicklogin);
+	$(click1).click(when_click1);	
 	var signupb = $(".signup");
 	$(signupb).click(when_clicksignup);
 	var getstartedb = $("#getstarted");

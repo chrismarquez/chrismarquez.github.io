@@ -10,6 +10,8 @@
 	<script src="dist/js/vendor/modernizr.js"></script>
 	<link rel="stylesheet" type="text/css" href="stylesheet.css">
 	<script type="text/javascript" src="ourscript.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+  <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
 	<script>
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -21,7 +23,7 @@
 
 	</script>
 </head>
-<body style = "background-color : #FFF0A5">
+<body style = "background-color : #FFF0A5" ng-app = "signupApp">
 	<div data-magellan-expedition="fixed">
 		<dl class="sub-nav">
 			<img align="right" src="http://i.imgur.com/HB6O2yc.png"/>
@@ -31,19 +33,19 @@
 			<dd data-magellan-arrival="js" id="getstarted"><a href="#" class="toplink">I'm Hungry!</a></dd>
 		</dl>
 	</div>
-<form>
+<form ng-controller = "signupController">
 	<div class="row spacer">
 		<h2 align="center">Create your CityMenu account</h2>
 	</div>
   	<div class="row">
     	<div class="small-3 small-offset-3 large-3 large-offset-3 columns">
       	<label>First Name
-        	<input type="text"/>
+        	<input type="text"/ ng-model = "firstName">
       	</label>
     	</div>
     	<div class="small-3 large-3 columns">
       	<label>Last Name
-        	<input type="text"/>
+        	<input type="text"/ ng-model = "lastName">
       	</label>
     	</div>
     	<div class="small-3 large-3 columns">
@@ -52,32 +54,32 @@
 	<div class="row">
     	<div class="small-6 small-offset-3 large-6 large-offset-3 columns">
       	<label>Username
-        	<input type="text"/>
+        	<input type="text"/ ng-model = "name">
       	</label>
     	</div>
 	</div>
 	<div class="row">
     	<div class="small-6 small-offset-3 large-6 large-offset-3 columns">
       	<label>Email
-        	<input type="text"/>
+        	<input type="text"/ ng-model = "email">
       	</label>
     	</div>
 	</div>
 	<div class="row">
     	<div class="small-6 small-offset-3 large-6 large-offset-3 columns">
       	<label>Password
-        	<input type="text"/>
+        	<input type="password"/ ng-model = "pass">
       	</label>
     </div>
     <div class="row" style="margin-left:6px">
     	<div class="small-6 small-offset-3 large-6 large-offset-3 columns">
     		<label>Gender</label>
-    			<input type="radio" name="gender" value="Male" id="gendermale"><label for="gendermale">Male</label>
-    			<input type="radio" name="gender" value="Female" id="genderfemale"><label for="genderfemale">Female</label>
+    			<input type="radio" name="gender" value="Male" id="gendermale" ng-model = "gender"><label for="gendermale">Male</label>
+    			<input type="radio" name="gender" value="Female" id="genderfemale" ng-model = "gender"><label for="genderfemale">Female</label>
     </div>
     <div class="row">
     	<div class="small-6 small-offset-3 large-6 large-offset-3 columns">
-    		<a id="login" class="button buttoncolors">Sign Up</a>
+    		<a id="login" class="button buttoncolors" ng-click = "signUp()">Sign Up</a>
     	</div>
   	</div>
 </form>
@@ -89,6 +91,9 @@
     <script>
       $(document).foundation();
     </script>
+
+    <script type="text/javascript" src = "signupApp.js"></script>
+    <script type="text/javascript" src = "signupController.js"></script>
 
 </body>
 </html>

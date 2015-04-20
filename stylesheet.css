@@ -1,198 +1,194 @@
-.spacer {
-	margin-top: 50px;
+@media screen {
+	#navbar {
+		background-color: #FFB03B;
+		padding: 0px;
+		margin-bottom: -7px;
+	}
+	.icon-bar > * i { /* Changes the top bar icon colors*/	
+		color : #FFF0A5;
+	}
+
+	.icon-bar > a:hover { /* Changes the top bar background hover colors*/	
+		background: #468976;
+	}
+
+	.icon-bar > a.active { /* Changes the top bar background hover colors*/	
+		background: #468976;
+	}
+
+	[data-magellan-expedition], [data-magellan-expedition-clone] {
+	  background: #FFB03B;
+	}
+
+	.panel {
+		background: #FFB03B;
+	}
+	.sub-nav dd a{
+	  color: #FFFFFF;
+	}
+
+	.photo {
+		height: 630px;
+		width : 100%;
+	}
+
+	h4 {
+		font-family: Verdana;
+		text-align: center;
+	}
+
+	p {
+		text-align: center;
+	}
+
+	#canvas {
+		position: fixed;
+		top: 520px;
+		right : 20px;
+		z-index: 50;
+	}
+
+	#test {
+		position: relative;
+	}
+
+	#text {
+		position: relative;
+	}
+
+	#socialbar {
+		position: absolute;
+		border: 2px solid black;
+		border-radius: 25px;
+		width: 300px;
+		height: 50px;
+		background: rgba(255,255,255,0.2);
+	}
+
+	.social {
+		position: absolute;
+		width: 50px;
+		height: 50px;
+		font-size: 40px;
+		z-index: 10;
+		top :-5px;
+	}
+
+	#facebook {
+		left: 30px;
+	}
+
+	#twitter {
+		left : 80px;
+	}
+
+	#youtube {
+		left : 130px;
+	}
+
+	#mail {
+		left : 180px;
+	}
+
+	#SkypeButton_Call_chrishalo0012_1 {
+		left : 200px;
+		top : -15px;
+	}
+
+	.canvas1 {
+		height: 150%;
+		width: 90%;
+	}
+
+	.canvas2 {
+		height: 85%;
+		width: 90%;
+	}
+
+	.mockup {
+		position: relative;
+		height: 200px;
+		width : 250px;
+	}
+
+	.numbers {
+		width: 100px;
+		height: 100px;
+
+	}
+
+	.mockup > img {
+		height: 250px;
+		width: 150px;
+	}
+
+	#mockup1 {
+		top: 50px;
+		left: 150px;
+	}
+
+	#mockup2 {
+		top: -150px;
+		left: 700px;
+	}
+
+	#mockup3 {
+		top: -50px;
+		left: 150px;
+	}
+
+	#mockup4 {
+		top: -250px;
+		left: 700px;
+	}
+
+	#mockup5 {
+		top: -150px;
+		left: 150px;
+	}
+
+	#mockup6 {
+		top: -350px;
+		left: 700px;
+	}
+
+	.mockupText {
+		position: absolute;
+		left: 200px;
+		top : 0px;
+		height: 150px;
+		width: 200px;
+	}
+
+	#video {
+		position: relative;
+		top: 50px;
+		left: 50px;
+	}
+
+	.picture {
+		position: relative;
+		width: 500px;
+		height: 480px;
+	}
+
+	#p1 {
+		top: -438px;
+		left: 800px;
+	}
+	.social > a {
+		color : #468976;
+	}
 }
 
-.spacerbottom {
-	margin-bottom:50px;
-}
-
-#navbar {
-	background-color: #FFB03B;
-	padding: 0px;
-	margin-bottom: -7px;
-}
-
-.buttoncolors {
-	background: #468966;
-}
-
-.fullWidth {
-   width: 90%;
-   margin-left: 50px;
-   margin-right: 50px;
-   max-width: initial;
-}
-
-.icon-bar > * i { /* Changes the top bar icon colors*/	
-	color : #FFF0A5;
-}
-
-.icon-bar > a:hover { /* Changes the top bar background hover colors*/	
-	background: #468976;
-}
-
-.icon-bar > a.active { /* Changes the top bar background hover colors*/	
-	background: #468976;
-}
-
-[data-magellan-expedition], [data-magellan-expedition-clone] {
-  background: #FFB03B;
-}
-
-.panel {
-	background: #FFB03B;
-}
-.sub-nav dd a{
-  color: #FFFFFF;
-}
-
-.photo {
-	height: 630px;
-	width : 100%;
-}
-
-h4 {
-	font-family: Verdana;
-	text-align: center;
-}
-
-p {
-	text-align: center;
-}
-
-#canvas {
-	position: fixed;
-	top: 520px;
-	right : 20px;
-	z-index: 50;
-}
-
-#test {
-	position: relative;
-}
-
-#text {
-	position: relative;
-}
-
-#socialbar {
-	position: absolute;
-	border: 2px solid black;
-	border-radius: 25px;
-	width: 300px;
-	height: 50px;
-	background: rgba(255,255,255,0.2);
-}
-
-.social {
-	position: absolute;
-	width: 50px;
-	height: 50px;
-	font-size: 40px;
-	z-index: 10;
-	top :-5px;
-}
-
-#facebook {
-	left: 30px;
-}
-
-#twitter {
-	left : 80px;
-}
-
-#youtube {
-	left : 130px;
-}
-
-#mail {
-	left : 180px;
-}
-
-#SkypeButton_Call_chrishalo0012_1 {
-	left : 200px;
-	top : -15px;
-}
-
-.canvas1 {
-	height: 150%;
-	width: 90%;
-}
-
-.canvas2 {
-	height: 85%;
-	width: 90%;
-}
-
-.mockup {
-	height: 200px;
-	width : 250px;
-	margin-bottom:75px;
-}
-
-.numbers {
-	width: 100px;
-	height: 100px;
-
-}
-
-.mockup > img {
-	height: 250px;
-	width: 150px;
-}
-
-#mockup1 {
-	top: 50px;
-	left: 150px;
-}
-
-#mockup2 {
-	top: -150px;
-	left: 700px;
-}
-
-#mockup3 {
-	top: -50px;
-	left: 150px;
-}
-
-#mockup4 {
-	top: -250px;
-	left: 700px;
-}
-
-#mockup5 {
-	top: -150px;
-	left: 150px;
-}
-
-#mockup6 {
-	top: -350px;
-	left: 700px;
-}
-
-.mockupText {
-	position: absolute;
-	left: 200px;
-	top : 0px;
-	height: 150px;
-	width: 200px;
-}
-
-#video {
-	top: 50px;
-	left: 50px;
-}
-
-.picture {
-	width: 620px;
-	height: 480px;
-}
-
-#p1 {
-	top: -438px;
-	left: 800px;
-}
-.social > a {
-	color : #468976;
+@media print {
+	.sub-nav {
+		display: none;
+	}
+	#canvas {
+		display: none;
+	}
+	#example-orbit {
+		display: none;
+	}
 }
