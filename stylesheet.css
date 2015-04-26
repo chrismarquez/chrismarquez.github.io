@@ -37,6 +37,10 @@
 		text-align: center;
 	}
 
+	h5 {
+		text-align: center;
+	}
+
 	p {
 		text-align: center;
 	}
@@ -57,7 +61,6 @@
 	}
 
 	#socialbar {
-		position: absolute;
 		border: 2px solid black;
 		border-radius: 25px;
 		width: 300px;
@@ -106,8 +109,7 @@
 	}
 
 	.mockup {
-		position: relative;
-		height: 200px;
+		height: 275px;
 		width : 250px;
 	}
 
@@ -168,8 +170,14 @@
 
 	.picture {
 		position: relative;
-		width: 500px;
+		width: 625px;
 		height: 480px;
+	}
+
+	.icon {
+		height: 125px;
+		margin: auto;
+		display: block;
 	}
 
 	#p1 {
@@ -178,6 +186,24 @@
 	}
 	.social > a {
 		color : #468976;
+	}
+
+	.fullWidth {
+   		width: 90%;
+   		margin-right: auto;
+   		max-width: initial;
+	}
+
+	li.option:hover {
+		-webkit-transition: all 0.4s ease-out; 
+        transition: all 0.4s ease-out; 
+		background-color: #468966;
+	}
+
+	li.option2:hover {
+		-webkit-transition: all 0.4s ease-out; 
+        transition: all 0.4s ease-out; 
+		background-color: #468966;
 	}
 }
 
