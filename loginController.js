@@ -9,8 +9,10 @@ app.controller("loginController", function($scope) {
 		$scope.signedUsers = dataSnapshot.val();
 	});
 	$scope.valid = function(obj) {
-		if($scope.search(obj)) {
+		if($scope.search(obj) == 0) {
 			alert ("Welcome back " + obj[userkey].firstName);
+		} else if ($scope.search(obj) == 1){
+			alert("Invalid password, please try again");
 		} else {
 			alert("Invalid user, please try again");
 		}
@@ -24,10 +26,12 @@ app.controller("loginController", function($scope) {
 			}
 			if ((obj[user].email == $scope.name || obj[user].name == $scope.name) && obj[user].pass == $scope.pass) {
 				userkey = user;
-				return true;
+				return 0;
+			} else if ((obj[user].email == $scope.name || obj[user].name == $scope.name) && !(obj[user].pass == $scope.pass)) {
+				return 1;
 			}
 		}
-		return false;
+		return 2;
 	}
 
 	$("#name").keypress(function(event) {
