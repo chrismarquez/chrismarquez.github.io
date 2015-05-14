@@ -34,6 +34,15 @@ app.controller("logRestController",function($scope) {
 	}
 
 	$scope.send = function() {
+		if ($scope.restName.length > 0 && $scope.address.length > 0 && $scope.region.length > 0 && $scope.country.length > 0 && $scope.phone.length > 0) {
+			this.upload();
+		} else {
+			alert("Please fill all fields");
+		}
+		
+	}
+
+	$scope.upload = function() {
 		server.push({
 			restName : $scope.restName,
 			address : $scope.address,
@@ -45,7 +54,7 @@ app.controller("logRestController",function($scope) {
 
 	$(document).keypress(function(event) {
 		if(event.which == 13 || event.keycode) {
-			$scope.send();
+			this.send();
 		}
 	});
 });
